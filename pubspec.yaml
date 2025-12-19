@@ -1,0 +1,61 @@
+name: tremor_ring_app
+description: "Tremor Guard - Smart Ring Monitoring App for Parkinson's Disease"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # 🔵 BLE & Sensors
+  sensors_plus: ^1.4.0
+  flutter_blue_plus: ^1.32.4
+  logger: ^2.0.2  
+  # 📞 Calling & Messaging
+  url_launcher: ^6.1.11
+  flutter_sms: ^2.3.0
+  
+  # 💾 Local Storage
+  shared_preferences: ^2.2.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # 📊 State Management & Provider
+  provider: ^6.0.0
+  
+  # 📈 Charts
+  fl_chart: ^0.63.0
+  
+  # 🔊 Audio & Vibration
+  vibration: ^1.8.4
+  audio_session: ^0.1.17
+  just_audio: ^0.9.36
+  
+  # 📲 Notifications
+  flutter_local_notifications: ^14.1.0
+  
+  # 🕐 Utilities
+  intl: ^0.19.0
+  flutter_svg: ^2.2.3
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  hive_generator: ^2.0.0
+  build_runner: ^2.4.0
+
+flutter:
+  uses-material-design: true
+  
+  # 📁 Assets
+  assets:
+    - assets/images/
+    - assets/sounds/
+    - assets/icons/
+  
